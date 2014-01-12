@@ -14,7 +14,8 @@
 #   about_triangle_project_2.rb
 #
 def triangle(a, b, c)
-  # WRITE THIS CODE
+  sides_array = [a, b, c]
+  [:equilateral, :isosceles, :scalene][sides_array.uniq.length - 1]
 end
 
 # Error class used in part 2.  No need to change this code.
